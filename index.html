@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#faf6ef">
+  <title>Your stay · Maison Soleil</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <aside class="sidebar" id="site-navigation" aria-label="Guest navigation">
+      <div class="sidebar-top">
+        <a class="brand" href="#" aria-label="Maison Soleil home">
+          <img src="./assets/images/logo.svg" alt="Maison Soleil">
+        </a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-navigation">
+          <img class="menu-icon" src="./assets/images/icon-menu.svg" alt="">
+          <img class="close-icon" src="./assets/images/icon-close.svg" alt="">
+        </button>
+      </div>
+
+      <nav class="guest-nav" aria-label="Main menu">
+        <a class="nav-link is-current" href="#stay" aria-current="page">
+          <img src="./assets/images/icon-bed.svg" alt="">
+          <span>Your stay</span>
+          <span class="notification">1</span>
+        </a>
+        <a class="nav-link" href="#arrival"><img src="./assets/images/icon-house.svg" alt=""><span>The house</span></a>
+        <a class="nav-link" href="#arrival"><img src="./assets/images/icon-pin.svg" alt=""><span>Around town</span></a>
+        <a class="nav-link" href="#breakfast"><img src="./assets/images/icon-breakfast-outline.svg" alt=""><span>Breakfast</span></a>
+        <a class="nav-link" href="mailto:hello@maisonsolaire.example"><img src="./assets/images/icon-mail.svg" alt=""><span>Messages</span></a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <section class="weather-card" aria-label="Local weather">
+          <img class="weather-sun" src="./assets/images/illustration-sun.svg" alt="">
+          <p class="eyebrow">Today in Cassis</p>
+          <p class="temperature">27°</p>
+          <p class="weather-summary">Sunny · light breeze</p>
+        </section>
+        <div class="sidebar-meta">
+          <p class="eyebrow">Est. 1987</p>
+          <p>Maison Soleil · 12 Rue des Oliviers · Cassis</p>
+          <p>© 2026 Maison Soleil</p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content" id="stay">
+      <header class="page-header">
+        <div>
+          <p class="eyebrow booking-status">Booking <span>·</span> Confirmed</p>
+          <h1>Bienvenue, <em>Lucia.</em></h1>
+        </div>
+        <div class="header-actions">
+          <button class="button button-outline" type="button" id="print-receipt">Print receipt</button>
+          <button class="button button-dark" type="button" id="add-calendar">Add to calendar</button>
+        </div>
+      </header>
+
+      <section class="booking-cards" aria-label="Your booking documents">
+        <article class="receipt-card" aria-label="Booking receipt">
+          <div class="receipt-heading">
+            <div>
+              <p class="eyebrow">Receipt</p>
+              <h2>Your stay</h2>
+            </div>
+            <p class="booking-number">№ MS-2026<br>0421-AH</p>
+          </div>
+
+          <div class="stay-dates">
+            <div>
+              <p class="eyebrow">Check in</p>
+              <p class="date">25 Apr</p>
+              <p class="date-detail">Saturday · 15:00</p>
+            </div>
+            <div>
+              <p class="eyebrow">Check out</p>
+              <p class="date">29 Apr</p>
+              <p class="date-detail">Wednesday · 11:00</p>
+            </div>
+          </div>
+
+          <dl class="receipt-items">
+            <div><dt>Room · La Garrigue · 4 nights</dt><dd>€ 620.00</dd></div>
+            <div><dt>Breakfast · 2 guests</dt><dd>€ 96.00</dd></div>
+            <div><dt>Tourist tax</dt><dd>€ 14.40</dd></div>
+          </dl>
+
+          <div class="receipt-total">
+            <p class="eyebrow">Total paid</p>
+            <p>€ 730.40</p>
+          </div>
+          <div class="receipt-footer">
+            <p class="eyebrow">Paid · Wise · GBP</p>
+            <img src="./assets/images/icon-barcode.svg" alt="Receipt barcode">
+          </div>
+        </article>
+
+        <article class="host-card">
+          <div class="host-card-top">
+            <p class="eyebrow">Welcome card</p>
+            <img src="./assets/images/icon-sun.svg" alt="" class="host-sun">
+          </div>
+          <div class="host-message">
+            <p class="host-intro">A note from your host,</p>
+            <h2>Margaux.</h2>
+            <p>We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.</p>
+          </div>
+          <div class="host-room">
+            <p class="eyebrow">Room</p>
+            <p>La Garrigue</p>
+          </div>
+        </article>
+        <p class="fan-hint"><span>✦</span> Hover to fan <span>✦</span></p>
+      </section>
+
+      <section class="guest-info" aria-label="Useful information for your stay">
+        <article class="info-card arrival-card" id="arrival">
+          <div class="info-top">
+            <div class="info-label"><span class="info-icon"><img src="./assets/images/icon-key.svg" alt=""></span><span class="eyebrow">Arrival</span></div>
+            <span class="info-number">01</span>
+          </div>
+          <h2>Check-in from 15:00</h2>
+          <p class="info-subtitle">Sat, 25 April</p>
+          <p>Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.</p>
+        </article>
+
+        <article class="info-card wifi-card">
+          <div class="info-top">
+            <div class="info-label"><span class="info-icon"><img src="./assets/images/icon-wifi.svg" alt=""></span><span class="eyebrow">Wifi</span></div>
+            <span class="info-number">02</span>
+          </div>
+          <h2>Le Soleil · Guest</h2>
+          <p class="info-subtitle">Password below</p>
+          <dl class="wifi-details">
+            <div><dt>Network</dt><dd>Le Soleil · Guest</dd></div>
+            <div><dt>Password</dt><dd><span>soleil-2026</span><button class="copy-button" type="button" aria-label="Copy Wi-Fi password" data-copy="soleil-2026">Copy</button></dd></div>
+          </dl>
+          <span class="copy-status" aria-live="polite"></span>
+        </article>
+
+        <article class="info-card breakfast-card" id="breakfast">
+          <div class="info-top">
+            <div class="info-label"><span class="info-icon"><img src="./assets/images/icon-breakfast.svg" alt=""></span><span class="eyebrow">Breakfast</span></div>
+            <span class="info-number">03</span>
+          </div>
+          <h2>Served 8 – 10:30</h2>
+          <p class="info-subtitle">On the terrace</p>
+          <p>Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const sidebar = document.querySelector(".sidebar");
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = sidebar.classList.toggle("menu-open");
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+    });
+
+    document.querySelectorAll(".nav-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        sidebar.classList.remove("menu-open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+      });
+    });
+
+    document.querySelector("#print-receipt").addEventListener("click", () => window.print());
+
+    document.querySelector(".copy-button").addEventListener("click", async (event) => {
+      const button = event.currentTarget;
+      const password = button.dataset.copy;
+      const status = document.querySelector(".copy-status");
+      try {
+        await navigator.clipboard.writeText(password);
+        button.textContent = "Copied";
+        status.textContent = "Wi-Fi password copied.";
+        window.setTimeout(() => { button.textContent = "Copy"; }, 1800);
+      } catch (error) {
+        status.textContent = "Copy unavailable. Select the password to copy it.";
+      }
+    });
+
+    document.querySelector("#add-calendar").addEventListener("click", () => {
+      const event = [
+        "BEGIN:VCALENDAR",
+        "VERSION:2.0",
+        "PRODID:-//Maison Soleil//Booking//EN",
+        "BEGIN:VEVENT",
+        "UID:MS-2026-0421-AH@maisonsolaire.example",
+        "DTSTAMP:20260101T000000Z",
+        "DTSTART:20260425T150000",
+        "DTEND:20260429T110000",
+        "SUMMARY:Stay at Maison Soleil - La Garrigue",
+        "LOCATION:12 Rue des Oliviers\\, Cassis",
+        "END:VEVENT",
+        "END:VCALENDAR"
+      ].join("\r\n");
+      const file = new Blob([event], { type: "text/calendar;charset=utf-8" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(file);
+      link.download = "maison-soleil-stay.ics";
+      link.click();
+      URL.revokeObjectURL(link.href);
+    });
+  </script>
+</body>
+</html>
